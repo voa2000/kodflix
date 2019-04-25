@@ -1,25 +1,22 @@
 .App {
   text-align:center;
 }
-
 img {
   width:300px;
-  height:280px;
-  
+  height:380px;
 }
 .container {
   background: rgba(35, 36, 88, 0.58);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
 }
 .item {
-  padding: 10px;
+  padding: 2px;
   border: 1px solid rgba(35, 36, 88, 0.58);
   position: relative;
   overflow: hidden;
   color: #bebacf;
 }
-
 .overlayText{
   transition: bottom ease 1s;
   position: absolute;
@@ -39,10 +36,11 @@ img {
  .details-container img{
   background: rgba(35, 36, 88, 0.58);
   display: flex;
-  padding: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-  height: 400px;
-  width: 300px;
+  padding: 2px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  height: 500px;
+  width: 350px;
+  margin:20px;
  }
  .details-title {
    background-color: rgb(14, 12, 54);
@@ -50,16 +48,16 @@ img {
    color: azure;
  }
  .details-text-item {
-   padding:20px;
+   padding:2px;
    flex:1;
    text-align:justify;
  }
  .details-image-item {
-  padding:20px;
+  padding:2px;
   flex:1;
   align-items: center;
 }
- @media (min-width: 800px){
+ @media (min-width: 600px){
    .details-container {
      display: flex;
    }
