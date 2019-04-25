@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 7000
+const port = 1000
 const movieList = require("./movieList.js");
 
 app.get('/rest/shows', (req, res) => {
