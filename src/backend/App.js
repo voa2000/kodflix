@@ -7,4 +7,4 @@ app.get('/rest/shows', (req, res) => {
     res.send(movieList);
 })
 
-app.listen(port, () => console.log(`Movie details app listening on port ${port}!`))
+app.listen(port, () => console.log(`Movie details app listening on port no ${port}!`))
