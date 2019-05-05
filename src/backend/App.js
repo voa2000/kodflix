@@ -3,6 +3,7 @@ const app = express();
 const port = 3001;
 const movieList = require("./movieList.js");
 
+//fetch('http://localhost:3001')
 app.get('/rest/shows', (req, res) => {
     res.send(movieList);
 })
