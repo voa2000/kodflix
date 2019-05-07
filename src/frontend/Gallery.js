@@ -6,12 +6,12 @@ export default function Gallery(props) {
   return (
       <div className="container">
         {
-          getMovies().map(movie => (
+          getMovies().map(({ id, title, logo }) => (
             <Movies
-              key={movie.id}
-              movieId={movie.id}
-              name={movie.name}
-              logo={movie.logo}
+              key={id}
+              movieId={id}
+              title={title}
+              logo={logo}
             />
           ))
         }

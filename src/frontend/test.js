@@ -1,12 +1,42 @@
+import React, { Component } from 'react';
 import us from './images/us.jpg';
 import highway from './images/thehighwaymen.jpg';
 import getout from './images/getout.jpg';
 import luther from './images/luther.jpg';
 import men from './images/whatmenwant.jpg';
 import shazam from './images/shazam.jpg';
-//Data seperated from main app
-export default function getMovies() {
 
+class getMovies extends Component {
+    constructor() {
+        super();
+        this.state = {
+            movies: []
+        }
+    }
+    componentDidMount() {
+        fetch('/rest/shows')
+            .then(res => res.json())
+            .then(movies => 
+              this.setState({movies}, () => 
+              console.log('Movies fetched ...', movies)));
+
+    }
+  render() {
+    return (
+      <div>
+      <h1>Mavel Movies</h1>
+        <ul>
+            {this.state.movies.map(({ id, title, year}) => 
+                <li key={id}>{ title } { year } </li>
+                )}
+        </ul>
+      </div>
+    )
+  }
+}
+
+export default getMovies
+render() { 
     return [
       {id:'us', title:"Us", logo: us, synoposis: 
       "Accompanied by her husband, son and daughter, Adelaide Wilson returns to the beachfront home where she grew up as a child."},
@@ -22,3 +52,5 @@ export default function getMovies() {
       "We all have a superhero inside us, it just takes a bit of magic to bring it out. In Billy Batson's case, by shouting out one word - SHAZAM. - this streetwise fourteen-year-old foster kid can turn into the grown-up superhero Shazam."}
     ];
   }
+}
+export default getMovies;

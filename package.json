@@ -1,8 +1,11 @@
 {
+  "proxy": "http://localhost:3001",
   "name": "kodflix",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
@@ -15,7 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-backend": "nodemon src/backend/App.js",
-    "start-all": "npm-run-all -p start start-backend"
+    "start-all": "npm-run-all -p start start-backend",
+    "dev": "concurrently \" npm run start-all\""
   },
   "eslintConfig": {
     "extends": "react-app"
