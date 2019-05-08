@@ -18,8 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "backend": "nodemon src/backend/App.js",
-    "start-all": "npm-run-all -p frontend backend",
-    "dev": "concurrently \" npm run start-all\""
+    "start-dev": "npm-run-all -p frontend backend",
+    "dev": "concurrently \" npm run start-dev\""
   },
   "eslintConfig": {
     "extends": "react-app"
