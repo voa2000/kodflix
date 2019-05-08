@@ -13,6 +13,8 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "start": "npm run backend",
+    "postinstall": "react-scripts build",
     "frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
