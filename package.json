@@ -14,7 +14,6 @@
   },
   "scripts": {
     "start": "npm run backend",
-    "postinstall": "react-scripts build",
     "frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
