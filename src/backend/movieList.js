@@ -1,24 +1,42 @@
 const movieList = [
-    {id:'us', title:"Us", synoposis: 
-    "A family's serene beach vacation turns to chaos when their doppelgängers appear and begin to terrorize them."},
-    {id:'highwaymen',title:"The Highwaymen", synoposis: 
-    "A pair of Texas Rangers come out of retirement to catch the infamous outlaws Bonnie and Clyde."},
-    {id:'getout',title:"Get Out", synoposis: 
-      "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness about their reception of him eventually reaches a boiling point."},
-    {id:'luther',title:"Luther" , synoposis:
-      "John Luther is a Detective Chief Inspector (DCI) working for the Serious Crime Unit in series one, and the new \"Serious and Serial\" unit from series 2. A dedicated police officer, Luther is obsessive, possessed, and sometimes violent."},
-    {id:'whatmenwant',title:"What Men Want",
-    synoposis: "A loose remake to the 2000 film What Women Want, the plot follows a woman who, after drinking a potent concoction given by a shaman, gains the ability to hear men's inner thoughts."},
-    {id:'shazam',title:"Shazam", synoposis: 
-    "We all have a superhero inside us, it just takes a bit of magic to bring it out. In Billy Batson's case, by shouting out one word - SHAZAM. - this streetwise fourteen-year-old foster kid can turn into the grown-up superhero Shazam."}
-  ]
-  module.exports = movieList;
-
-
-
-
-
-
+  {
+    id: "pikachu",
+    title: "Pikachu",
+    synopsis:
+      "A family's serene beach vacation turns to chaos when their doppelgängers appear and begin to terrorize them."
+  },
+  {
+    id: "johnwick3",
+    title: "John Wick 3",
+    synopsis:
+      "A pair of Texas Rangers come out of retirement to catch the infamous outlaws Bonnie and Clyde."
+  },
+  {
+    id: "avengersendgame",
+    title: "Avengers-Endgame",
+    synopsis:
+      "The grave course of events set in motion by Thanos that wiped out half the universe and fractured the Avengers ranks compels the remaining Avengers to take one final stand in Marvel Studios' grand conclusion to twenty-two films, 'Avengers: Endgame."
+  },
+  {
+    id: "thehustle",
+    title: "The Hustle",
+    synopsis:
+      "In the hilarious new comedy THE HUSTLE, Anne Hathaway and Rebel Wilson star as female scam artists, one low rent and the other high class, who team up to take down the dirty rotten men who have wronged them."
+  },
+  {
+    id: "breakthrough",
+    title: "Breakthrough",
+    synopsis:
+      "A loose remake to the 2000 film What Women Want, the plot follows a woman who, after drinking a potent concoction given by a shaman, gains the ability to hear men's inner thoughts."
+  },
+  {
+    id: "rocketman",
+    title: "Rocketman",
+    synopsis:
+      "We all have a superhero inside us, it just takes a bit of magic to bring it out. In Billy Batson's case, by shouting out one word - SHAZAM. - this streetwise fourteen-year-old foster kid can turn into the grown-up superhero Shazam."
+  }
+];
+module.exports = movieList;
 
 // [
 // {id:'mov001', title:'Us',"runningtime":"1h 56min", genre:"Horror",director:"Jordan Peele","year":"2019","synoposis":'A family\'s serene beach vacation turns to chaos when their doppelgängers appear and begin to terrorize them.'},

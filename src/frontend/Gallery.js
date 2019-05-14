@@ -1,27 +1,34 @@
 import React, { Component } from "react";
-import Movies from "./Movies";
-import getMovies from "./movies-get";
+import Cover from "./Cover";
 
 export class Gallery extends Component {
   constructor() {
     super();
     this.state = {
-      movies: []
+      movies: "",
+      error: ""
     };
   }
-    fetch("/rest/shows")
+  componentDidMount() {
+    fetch(`/rest/shows`)
       .then(res => res.json())
-      .then(movies =>
-        console.log("Movies fetched ...", JSON.stringify(movies))
-      );
-
-    render() {
-      return (
-        <div className="container">
-          {getMovies().map(({ id, title, logo }) => (
-            <Movies key={id} movieId={id} title={title} logo={logo} />
-          ))}
-        </div>
-      );
-    }
+      .then(movies => {
+        console.log(movies);
+        this.setState({
+          movies: movies
+        });
+      })
+      .catch(() => this.setState({ error: "Movies not found!" }));
   }
+  render() {
+    return (
+      <div className="container">
+        {this.state.movies
+          ? this.state.movies.map(movie => (
+              <Cover key={movie.id} id={movie.id} title={movie.title} />
+            ))
+          : null}
+      </div>
+    );
+  }
+}
