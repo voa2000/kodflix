@@ -1,27 +1,27 @@
-import React from 'react'
-import Movies from './Movies';
-import getMovies from './movies-get';
+import React, { Component } from "react";
+import Movies from "./Movies";
+import getMovies from "./movies-get";
 
-export default function Gallery(props) {
+export class Gallery extends Component {
+  constructor() {
+    super();
+    this.state = {
+      movies: []
+    };
+  }
+    fetch("/rest/shows")
+      .then(res => res.json())
+      .then(movies =>
+        console.log("Movies fetched ...", JSON.stringify(movies))
+      );
 
-  fetch('/rest/shows')
-  .then(res => res.json())
-  .then(movies => (  
-    console.log('Movies fetched ...', JSON.stringify(movies))));
-
-  return (
-      <div className="container">
-        {
-          getMovies().map(({ id, title, logo }) => (
-            <Movies
-              key={id}
-              movieId={id}
-              title={title}
-              logo={logo}
-            />
-          ))
-        }
-      </div>
-  )
-}
-
+    render() {
+      return (
+        <div className="container">
+          {getMovies().map(({ id, title, logo }) => (
+            <Movies key={id} movieId={id} title={title} logo={logo} />
+          ))}
+        </div>
+      );
+    }
+  }
