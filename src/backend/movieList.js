@@ -30,6 +30,18 @@ const movieList = [
       "A loose remake to the 2000 film What Women Want, the plot follows a woman who, after drinking a potent concoction given by a shaman, gains the ability to hear men's inner thoughts."
   },
   {
+    id: "beats",
+    title: "Beats",
+    synopsis:
+      "Best mates Johnno and Spanner share a deep bond. Now on the cusp of adulthood, life is destined to take them in different directions – Johnno's family are moving him to a new town and a better life, leaving Spanner behind to face a precarious future. In pursuit of adventure and escape the boys head out on one last night together to an illegal rave before parting ways indefinitely. A universal story of friendship, rebellion, and the irresistible power of gathering youth, set to the soundtrack as eclectic and electrifying as the scene it gave birth to, BEATS is a story for our time."
+  },
+  {
+    id: "dumbo",
+    title: "Dumbo",
+    synopsis:
+      "From Disney and visionary director Tim Burton, the all-new grand live-action adventure 'Dumbo' expands on the beloved classic story where differences are celebrated, family is cherished and dreams take flight. Circus owner Max Medici (Danny DeVito) enlists former star Holt Farrier (Colin Farrell) and his children Milly (Nico Parker) and Joe (Finley Hobbins) to care for a newborn elephant whose oversized ears make him a laughingstock in an already struggling circus. But when they discover that Dumbo can fly, the circus makes an incredible comeback, attracting persuasive entrepreneur V.A. Vandevere (Michael Keaton), who recruits the peculiar pachyderm for his newest, larger-than-life entertainment venture, Dreamland. Dumbo soars to new heights alongside a charming and spectacular aerial artist, Colette Marchant (Eva Green), until Holt learns that beneath its shiny veneer, Dreamland is full of dark secrets."
+  },
+  {
     id: "rocketman",
     title: "Rocketman",
     synopsis:
