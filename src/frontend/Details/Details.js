@@ -23,7 +23,7 @@ export default class Details extends React.Component {
   render() {
     let movieId = this.props.match.params.id;
 
-    let { title, synopsis } = this.state.moviesData;
+    let { title, synopsis, year } = this.state.moviesData;
     if (movieId) {
       return (
         <div className="App">
@@ -32,7 +32,16 @@ export default class Details extends React.Component {
           </div>
           <div className="details-container">
             <div className="details-text-item">
+              <center>
+                <strong>
+                  <em>Synopsis</em>
+                </strong>
+              </center>
               <p>{synopsis}</p>
+              <strong>
+                <em>Year Released</em>{" "}
+              </strong>
+              : {year}
             </div>
             <div className="details-image-item">
               <img
