@@ -29,7 +29,9 @@ export class Gallery extends Component {
             <Cover key={movie.id} id={movie.id} title={movie.title} />
           ))
         ) : (
-          <Loading />
+          <div className="loading-container">
+            <Loading />
+          </div>
         )}
       </div>
     );

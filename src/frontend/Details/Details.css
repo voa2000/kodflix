@@ -21,19 +21,17 @@
   color: azure;
 }
 .details-text-item {
-  padding: 10px;
   flex: 1;
   text-align: justify;
   font-size: 1.5em;
 }
 .details-image-item {
-  padding: 5px;
   flex: 1;
   align-items: justify;
 }
 @media (min-width: 600px) {
   .details-container {
-    display: flex;
+    display: inline-block;
   }
 }
 .details-text-title {
