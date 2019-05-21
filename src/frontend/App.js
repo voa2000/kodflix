@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div>
         <Router>
-          <div className="App">
+          <div className="container">
             <Switch>
               <Route exact path="/" component={Gallery} />
               <Route exact path="/not-found" component={Notfound} />

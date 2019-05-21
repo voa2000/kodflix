@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Cover from "../Cover/Cover";
-
+import Loading from "../Loading/Loading";
 export class Gallery extends Component {
   constructor() {
     super();
@@ -20,14 +20,17 @@ export class Gallery extends Component {
       })
       .catch(() => this.setState({ error: "Movies not found!" }));
   }
+
   render() {
     return (
       <div className="container">
-        {this.state.movies
-          ? this.state.movies.map(movie => (
-              <Cover key={movie.id} id={movie.id} title={movie.title} />
-            ))
-          : null}
+        {this.state.movies ? (
+          this.state.movies.map(movie => (
+            <Cover key={movie.id} id={movie.id} title={movie.title} />
+          ))
+        ) : (
+          <Loading />
+        )}
       </div>
     );
   }
