@@ -40,21 +40,21 @@ export default class Details extends React.Component {
               <div className="details-text-title">
                 Year Released:{this.state.moviesData.year}
               </div>
-            </div>
-            <div className="details-image-item">
               <img
+                className="details-image-item"
                 src={require(`../../frontend/common/images/details/${
                   this.state.moviesData.id
                 }.jpg`)}
                 alt={this.state.moviesData.title}
               />
             </div>
+
+            <Link className="details-back-button" to="/">
+              {" "}
+              Back to home page
+            </Link>
+            <p />
           </div>
-          <Link style={{ fontSize: 30, color: "white" }} to="/">
-            {" "}
-            Back to home page
-          </Link>
-          <p />
         </div>
       ) : (
         <Loading />

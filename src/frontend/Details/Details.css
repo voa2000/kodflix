@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.details-container img {
+img {
   height: 500px;
   width: 350px;
 }
@@ -36,4 +36,13 @@
 }
 .details-text-title {
   font-weight: bold;
+}
+.details-back-button {
+  margin: 5px;
+  border: 2px solid blanchedalmond;
+  text-decoration: none;
+  color: bisque;
+  font-size: 2em;
+  border-radius: 5%;
+  background-color: black;
 }
