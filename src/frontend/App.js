@@ -16,8 +16,6 @@ class App extends Component {
               <Route exact path="/not-found" component={Notfound} />
               <Route exact path="/:id" component={Details} />
             </Switch>
-            {/* console.log(this.state.json); */}
-            {/* <p >{Object.values(this.state.movies)}</p> */}
           </div>
         </Router>
       </div>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Cover from "../Cover/Cover";
 import Loading from "../Loading/Loading";
+import "../App.css";
 export class Gallery extends Component {
   constructor() {
     super();
@@ -13,7 +14,6 @@ export class Gallery extends Component {
     fetch(`/rest/shows`)
       .then(res => res.json())
       .then(movies => {
-        console.log(movies);
         this.setState({
           movies
         });
