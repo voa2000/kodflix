@@ -35,21 +35,21 @@ export default class Details extends React.Component {
               <h1>{this.state.moviesData.title}</h1>
             </div>
           </div>
-          <div className="details-text-item">
-            <div className="details-text-title">Synopsis</div>
-            <div className="details-text">{this.state.moviesData.synopsis}</div>
-            <div className="details-text-title">
-              Year Released: {this.state.moviesData.year}
-            </div>
-            <div className="details-image-item">
-              <img
-                src={require(`../../frontend/common/images/details/${
-                  this.state.moviesData.id
-                }.jpg`)}
-                alt={this.state.moviesData.title}
-              />
-            </div>
+          <div className="details-text-title">Synopsis</div>
+          <div className="details-text">{this.state.moviesData.synopsis}</div>
+          <div className="details-text-title">
+            Year Released: {this.state.moviesData.year}
           </div>
+
+          <div className="details-image-item">
+            <img
+              src={require(`../../frontend/common/images/details/${
+                this.state.moviesData.id
+              }.jpg`)}
+              alt={this.state.moviesData.title}
+            />
+          </div>
+
           <Link className="details-back-button" to="/">
             {" "}
             Back to Gallery

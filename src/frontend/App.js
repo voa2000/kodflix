@@ -8,9 +8,9 @@ import { Gallery } from "./Gallery/Gallery";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <Router>
-          <div className="container">
+          <div>
             <Switch>
               <Route exact path="/" component={Gallery} />
               <Route exact path="/not-found" component={Notfound} />
