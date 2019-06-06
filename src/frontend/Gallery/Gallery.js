@@ -23,16 +23,19 @@ export class Gallery extends Component {
 
   render() {
     return (
-      <div className="container">
-        {this.state.movies ? (
-          this.state.movies.map(movie => (
-            <Cover key={movie.id} id={movie.id} title={movie.title} />
-          ))
-        ) : (
-          <div className="loading-container">
-            <Loading />
-          </div>
-        )}
+      <div>
+        <h1>Click on a cover to find out more about it.</h1>
+        <div className="container">
+          {this.state.movies ? (
+            this.state.movies.map(movie => (
+              <Cover key={movie.id} id={movie.id} title={movie.title} />
+            ))
+          ) : (
+            <div className="loading-container">
+              <Loading />
+            </div>
+          )}
+        </div>
       </div>
     );
   }

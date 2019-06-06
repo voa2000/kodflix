@@ -2,7 +2,7 @@
   text-align: center;
 }
 img {
-  width: 335px;
+  width: 300px;
   height: 400px;
 }
 .container {
@@ -16,12 +16,11 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .item {
-  padding: 0px;
+  padding: 1em;
   position: relative;
   overflow: hidden;
   color: #500a44;
-  margin: 0em;
-  border: 1em solid black;
+  border: 1em solid rgb(10, 10, 10);
 }
 .overlayText {
   transition: bottom ease 1s;
