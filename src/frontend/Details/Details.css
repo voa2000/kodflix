@@ -3,46 +3,75 @@
  */
 .details-container {
   display: flex;
-  padding: 1px;
-  margin-left: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin: 10px;
-  height: auto;
-  justify-content: center;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  padding: 1em;
 }
 
-img {
-  height: 500px;
-  width: 350px;
+.details-content {
+  background: linear-gradient(to bottom, black, transparent);
+  padding: 30px 120px;
+  height: 100%;
+  flex: 1;
 }
-
 .details-title {
-  flex: 2;
-  color: azure;
+  text-decoration: blue;
 }
-.details-text-item {
-  flex: 1;
-  text-align: justify;
-  font-size: 1.5em;
-}
-.details-image-item {
-  flex: 1;
-  align-items: justify;
-}
-@media (min-width: 600px) {
-  .details-container {
-    display: inline-block;
-  }
+.details-content-title {
+  font-size: 3rem;
 }
 .details-text-title {
-  font-weight: bold;
+  font-size: 1.5rem;
+  color: lavender;
+  padding: 1rem 0.5rem;
+}
+.details-text {
+  font-size: 1.5rem;
+  color: lavender;
+  padding: 2em;
 }
 .details-back-button {
-  margin: 5px;
-  border: 2px solid blanchedalmond;
-  text-decoration: none;
-  color: bisque;
-  font-size: 2em;
-  border-radius: 5%;
-  background-color: black;
+  color: red;
+  font-size: 1.5em;
+  text-align: center;
+}
+.details-image-item {
+  text-align: center;
+  padding: 2em 0 2em 0;
+  flex: 1;
+}
+.details-play {
+  transition: all 0.5s ease;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -54px;
+  margin-left: -90px;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  border-color: transparent transparent transparent white;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 110px 0 110px 180px;
+}
+
+.details-play:hover {
+  margin-top: -108px;
+  margin-left: -108px;
+  border-width: 164px 0 164px 270px;
+}
+
+@media screen and (max-width: 540px) {
+  .details-content {
+    padding: 45px 30px;
+  }
+
+  .details-content-title {
+    padding-bottom: 0;
+  }
 }
