@@ -6,6 +6,7 @@
   "dependencies": {
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
+    "mongodb": "^3.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
@@ -19,7 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "backend": "nodemon src/backend/App.js",
-    "start-dev": "npm-run-all -p frontend backend",
+    "start-dev": "npm-run-all -p frontend backend start-db",
+    "start-db": "mongod",
     "dev": "concurrently \" npm run start-dev\""
   },
   "eslintConfig": {

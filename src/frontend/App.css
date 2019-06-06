@@ -35,3 +35,43 @@ img {
   bottom: 0;
   color: aliceblue;
 }
+/*Loading*/
+.loader {
+  border: 30px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 30px solid blue;
+  border-right: 30px solid green;
+  border-bottom: 30px solid red;
+  border-left: 30px solid rgb(97, 6, 74);
+  width: 300px;
+  height: 300px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-container {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 15vh;
+  position: relative;
+}
