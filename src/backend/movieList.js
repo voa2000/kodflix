@@ -8,7 +8,7 @@ const movieList = [
   },
   {
     id: "johnwick3",
-    title: "John Wick 3",
+    title: "John Wick Three",
     year: 2019,
     synopsis:
       "A pair of Texas Rangers come out of retirement to catch the infamous outlaws Bonnie and Clyde."
